@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $links = config("links");
+    return view('index', [
+        "links" => $links
+    ]);
 })->name("index");
