@@ -9,7 +9,7 @@
 </head>
 <body>
     @include("partials.header")
-    @yield("partials.home_books")
+    @include("partials.home_books")
     @yield("partials.home_mid_banner")
     @include("partials.footer")
 </body>
