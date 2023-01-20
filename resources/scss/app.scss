@@ -1,0 +1,19 @@
+@import "~bootstrap/scss/bootstrap";
+header {
+    .top-banner {
+        min-height: 20px;
+    }
+    .logo-header {
+        width: 50%;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .jumbotron {
+        background-image: url("../images/jumbotron.jpg");
+        background-size: cover;
+        height: 350px;
+    }
+}
