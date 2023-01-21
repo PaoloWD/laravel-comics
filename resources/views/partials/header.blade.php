@@ -10,17 +10,14 @@
         <div class="d-flex my-3 justify-content-between align-items-center">
             <div><img class="logo-header" src="{{ Vite::asset("resources/images/dc-logo.png")}}" alt=""></div>
             <div>
-                <ul class="d-flex gap-3 ">
-                    <li>CHARACTERS</li>
-                    <li>COMICS</li>
-                    <li>MOVIES</li>
-                    <li>TV</li>
-                    <li>GAMES</li>
-                    <li>COLLECTABLES</li>
-                    <li>VIDEOS</li>
-                    <li>FANS</li>
-                    <li>NEWS</li>
-                    <li>SHOP</li>
+                <ul class="d-flex gap-3 m-0">
+                    @foreach ($links["links_header"] as $link)
+                        <li>
+                           <a class="py-3" href="/">{{$link}}</a>
+                        </li>
+                    
+                        
+                    @endforeach
                 </ul>
             </div>
             <div>SEARCH</div>

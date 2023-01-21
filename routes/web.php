@@ -16,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
    
     /* $links = config("links"); */
-    return view('index', [
-        "comics" => config("comics")
+    return view('posts.index', [
+        "links"=>config("links"),
+        "comics" => config("comics"),
+       
+        
     ]);
 })->name("index");

@@ -14,7 +14,15 @@ header {
     .jumbotron {
         background-image: url("../images/jumbotron.jpg");
         background-size: cover;
-        height: 350px;
+        height: 500px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
     }
 }
 
@@ -23,7 +31,26 @@ footer {
         background-image: url(../images/footer-bg.jpg);
     }
 
+    a {
+        text-decoration: none;
+        color: #7d7c7b;
+        &:hover {
+            color: #7d7c7b;
+        }
+    }
+
     .logo-bg-dc {
         width: 40%;
+    }
+}
+
+.mid_banner {
+    .icons {
+        width: 50px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
     }
 }
