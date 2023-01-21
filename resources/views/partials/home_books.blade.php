@@ -1,9 +1,9 @@
-<div class="bg-dark text-white">
+<div class="bg-dark text-white comics-section">
     <div class="container">
-        <div class="row g-5">
+        <div class="row py-5">
             @foreach ($comics as $comic)
                 {{-- {{$comic["title"]}} <br> --}}
-                <div class="card bg-dark col-2 border-0" style="width: 18rem;">
+                <div class="card bg-dark flex-grow-1 col-2 border-0">
                     <img src={{$comic['thumb']}} class="card-img-top" alt="...">
                     <div class="card-body bg-dark">
                     <p class="card-text bg-dark">{{$comic['title']}}</p>
