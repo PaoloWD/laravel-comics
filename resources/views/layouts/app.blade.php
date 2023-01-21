@@ -9,9 +9,12 @@
 </head>
 <body>
     @include("partials.header")
-    @include("partials.home_books")
+    @yield("partials.home_books")
+    @yield("partials.comics.description")
+    
     {{-- @yield("partials.home_mid_banner") --}}
-    @include("partials.home_mid_banner")
+    @yield("partials.home_mid_banner")
+    @yield("partials.comics.details")
     @include("partials.footer")
 </body>
 </html>

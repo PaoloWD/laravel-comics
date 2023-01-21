@@ -13,7 +13,7 @@
                 <ul class="d-flex gap-3 m-0">
                     @foreach ($links["links_header"] as $link)
                         <li>
-                           <a class="py-3" href="/">{{$link}}</a>
+                           <a class="py-3" href="{{route($link)}}">{{$link}}</a>
                         </li>
                     
                         
